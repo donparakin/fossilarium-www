@@ -1,3 +1,5 @@
+#---- Marker to git-ignore files and directories
+ZZZ.*
 
 #---- Built files
 style.bundle.*
@@ -22,6 +24,7 @@ __pycache__/
 node_modules/
 /x-dev/builds/
 /x-dev/sandbox/
+_FOSSIL_
 
 
 #---- IDE (IntelliJ)
