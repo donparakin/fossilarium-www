@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="{{ .Page.Language }}"{{ with .Params.pageid }} data-pageid="{{.}}"{{end}}>
+<head>
+{{- partial "html/head.html" . }}
+{{- block "inside-head" . }}{{ end -}}
+</head>
+
+<body>
+ <div id="vue-app">
+  <div id="ws-overlay" :class="{'is-overlay':sideNav_show}" @click="sideNav_toggle"></div>
+{{ partial "html/body-topbar.html" . -}}
+
+{{ block "main" . }}
+  <section class="ws-content container">
+   <h3>UNDER CONSTRUCTION!</h3>
+  </section>
+{{ end }}
+
+{{ partialCached "html/body-footer.html" . }}
+ </div>
+{{- if hugo.IsProduction }}
+ <script src="https://cdn.jsdelivr.net/combine/npm/vue@2.6.12,npm/vue-router@3.4.3"></script>
+{{- else }}
+ <script src="https://cdn.jsdelivr.net/combine/npm/vue@2.6.12/dist/vue.js,npm/vue-router@3.4.3/dist/vue-router.js"></script>
+{{- end }}
+ <script src="/built/site.bundle.js"></script>
+{{- partial "google-analytics.html" . }}
+</body>
+</html>

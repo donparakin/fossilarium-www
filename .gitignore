@@ -7,7 +7,7 @@ svelte.bundle.*
 hugo/public/
 !hugo/public/robots.txt
 hugo/themes/*
-!hugo/themes/bnc-blog
+!hugo/themes/fossilarium-2020
 
 
 #---- Google App Engine (GAE) / Python / Flask
