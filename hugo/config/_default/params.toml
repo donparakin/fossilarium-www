@@ -1,0 +1,8 @@
+
+isProd = false
+gravatar = {email="don@weaddvalue.ca"}
+social = [
+    {icon="twitter", url="", weight=20},
+    {icon="facebook", url="", weight=40},
+    {icon="youtube", url="", weight=60}
+]

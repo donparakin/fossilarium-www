@@ -1,0 +1,41 @@
+#-----------------------------------------------------------------------
+# Site:  Fossilarium.com
+#-----------------------------------------------------------------------
+baseURL = "https://www.fossilarium.com/"
+#languageCode = "en-us"
+title = "Fossilarium.com"
+#uglyURLs = true
+
+theme = "fossilarium-2020"
+
+contentDir = "../content"
+#publishDir = "../gae/static-gen"
+enableRobotsTXT = true
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableMissingTranslationPlaceholders = false
+
+[frontmatter]
+  #---- if file is yyyy-mm-dd-post-title.md, date is from file name
+  date = [":filename", ":default"]
+
+[permalinks]
+  pages = "/:filename"
+  #news = "/news/:year/:month/:day/:slug"
+  #blog = "/blog/:year/:month/:slug"
+  #code = "/code/:slug"
+
+[author]
+  name = "CFC / FCE"
+
+[taxonomies]
+  tag = "tags"
+
+[markup.goldmark.renderer]
+  unsafe= true
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false

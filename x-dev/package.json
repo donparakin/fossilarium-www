@@ -1,0 +1,34 @@
+{
+  "name": "fossilarium-www",
+  "version": "0.1.0",
+  "description": "www.fossilarium.com website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hugo:version": "cd ../hugo && hugo version",
+    "hugo:build": "cd ../hugo && hugo --cleanDestinationDir",
+    "hugo:serve": "cd ../hugo && hugo server",
+    "hugo:serve+drafts": "cd ../hugo && hugo server --buildDrafts",
+    "hugo:new-post": "cd ../hugo && hugo",
+    "rollup:watch-dev": "rollup -c rollup/rollup.config.cjs --environment BUILD:dev --watch",
+    "rollup:build-dev": "rollup -c rollup/rollup.config.cjs --environment BUILD:dev",
+    "rollup:build-prod": "rollup -c rollup/rollup.config.cjs --environment BUILD:prod"
+  },
+  "author": "Don Parakin",
+  "license": "COPYRIGHT",
+  "dependencies": {
+    "bulma": "*",
+    "hugo-bin": "^0.63.1",
+    "rollup": "*",
+    "rollup-plugin-scss": "*",
+    "rollup-plugin-vue": "*",
+    "rollup-plugin-terser": "*",
+    "rollup-plugin-sizes": "*",
+    "vue": "2.6.12",
+    "vue-template-compiler": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/parakin/fossilarium-www.git"
+  }
+}

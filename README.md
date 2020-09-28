@@ -1,3 +1,3 @@
-# fossilarium-web
+# fossilarium-www
 
-www.fossilarium.com - static web site (including SPAs for users & admin)
+www.fossilarium.com - Yes, we get the irony
