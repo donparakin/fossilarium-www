@@ -1,0 +1,35 @@
+{
+  "name": "fossilarium-www",
+  "version": "0.1.0",
+  "description": "www.fossilarium.com website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hugo:build": "hugo --cleanDestinationDir",
+    "hugo:serve": "hugo server --panicOnWarning",
+    "hugo:serve+debug": "hugo server --verbose --disableFastRender",
+    "hugo:serve+drafts": "hugo server --buildDrafts",
+    "hugo:new-post": "hugo",
+    "hugo:config": "hugo config",
+    "hugo:version": "hugo version",
+    "sass:build": "sass assets-src/css:assets/built --style=compressed",
+    "sass:watch": "sass assets-src/css:assets/built --watch --style=expanded --error-css",
+    "site:build": "npm run sass:build && npm run hugo:build"
+  },
+  "author": "Don Parakin",
+  "license": "COPYRIGHT",
+  "dependencies": {
+    "hugo-extended": "*",
+    "htmx.org": "*",
+    "alpinejs": "*",
+    "lit": "*",
+    "eslint": "*",
+    "@picocss/pico": "*",
+    "sass": "*",
+    "bulma": "1.*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/parakin/fossilarium-www.git"
+  }
+}

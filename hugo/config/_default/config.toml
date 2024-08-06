@@ -25,9 +25,6 @@ enableMissingTranslationPlaceholders = false
   #blog = "/blog/:year/:month/:slug"
   #code = "/code/:slug"
 
-[author]
-  name = "CFC / FCE"
-
 [taxonomies]
   tag = "tags"
 

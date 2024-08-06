@@ -1,7 +1,6 @@
 
 #---- Built files
-style.bundle.*
-svelte.bundle.*
+hugo/assets/built/
 
 #---- Hugo
 hugo/public/

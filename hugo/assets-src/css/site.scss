@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+//-------- Before Bulma Styling
+@import "_style.before-bulma";
+
+//-------- Bulma: import only what is needed
+@import "../../node_modules/bulma/sass/utilities/_index";
+@import "../../node_modules/bulma/sass/base/_index";
+
+@import "../../node_modules/bulma/sass/elements/_index";
+@import "../../node_modules/bulma/sass/components/_index";
+@import "../../node_modules/bulma/sass/form/_index";
+@import "../../node_modules/bulma/sass/grid/_index";
+@import "../../node_modules/bulma/sass/helpers/_index";
+@import "../../node_modules/bulma/sass/layout/_index";
+
+//-------- After Bulma Styling (may use default Bulma vars)
+@import "_style.after-bulma";
+//@import "svelte.bundle.css";
